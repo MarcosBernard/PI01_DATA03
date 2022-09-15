@@ -9,7 +9,7 @@ CargaCSVs.crear_CSVs()
 app = FastAPI()
 
 @app.get("/Pregunta1")
-def Año_más_carreras():
+def Año_con_más_carreras():
     return Querys.Pregunta1()
 
 @app.get("/Pregunta2")

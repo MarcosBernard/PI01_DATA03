@@ -40,7 +40,6 @@ def query(query_):
     conexion = pymysql.connect (host='localhost', database='pidts03', user ='PIDTS03', password='abc123')
     cursor = conexion.cursor()
     cursor.execute(query_)
-    salida = []
     for dato in cursor:
-        salida.append(dato[0])
+        salida = dato
     return (salida)
